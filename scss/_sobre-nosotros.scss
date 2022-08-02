@@ -1,0 +1,25 @@
+.card {
+    margin: auto;
+
+    .card-text-sobre-nosotros {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .card-sobre-nosotros {
+        width: 30rem !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    
+    .card-sobre-nosotros {
+        width: 19rem !important;
+
+        .card-text-sobre-nosotros {
+            font-size: 20px !important;
+        }
+    }
+}

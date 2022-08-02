@@ -1,0 +1,64 @@
+@import "paginas.scss";
+@import "sobre-nosotros.scss";
+@import "galeria.scss";
+@import "servicios.scss";
+@import "contacto.scss";
+.imagen-principal {
+    width: 90%;
+    display: flex;
+    object-fit: fill;
+}
+
+.container {
+    margin: auto !important;
+    font-size: 20px;
+    margin-top: 30px !important;
+    height: auto;
+
+    .row{
+
+        .col-sm-4 {
+            margin: auto;
+        }
+        
+        .col-sm-8 {
+            display: flex;
+            object-fit: contain;
+        }
+        
+        .col-sm-12 {
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        flex-direction: column;
+
+        .logo-nav {
+            text-align: center;
+            padding-left: auto;
+        }
+    }
+
+    .container {
+        font-size: 15px;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .col-12 {
+        padding-top: 20px;
+    }
+
+    li {
+        display: block !important;
+        margin: 30px !important;
+    }
+}

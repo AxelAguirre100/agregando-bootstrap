@@ -1,0 +1,27 @@
+form {
+    margin: auto;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 146px !important;
+    margin-top: 145px !important;
+    background-color: white;
+
+    div {
+        padding: 10px;
+    }
+}
+
+.button{
+    justify-content: center;
+    text-align: center;
+    margin: auto !important;
+    margin-top: 10px !important;
+    width: 120px !important;
+    background-color: $primarycolor;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+}

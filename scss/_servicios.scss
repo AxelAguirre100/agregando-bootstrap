@@ -1,0 +1,38 @@
+.cajon {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .card {
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+
+        .card-body {
+
+            .card-title {
+                font-size: 30px;
+                text-decoration: underline;
+            }
+
+            .card-texta {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .cajon {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .card {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+}
