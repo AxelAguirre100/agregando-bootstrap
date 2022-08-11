@@ -197,7 +197,9 @@ textarea {
   .container {
     font-size: 15px;
     height: auto;
-    width: auto; } }
+    width: auto; }
+  .imagen {
+    width: 300px; } }
 
 @media screen and (max-width: 576px) {
   .col-12 {
