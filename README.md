@@ -3,8 +3,8 @@ index // Agregue estas keywords: "Trencito Paysandú, Cumpleaños, Fiestas,Anima
 
 contacto // Agregue estas keywords: "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Contacto, facebook, twitter" y le puse este título: "Trencito Paysandú | Contacto"
 
-galeria // "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Galería, Fotos" y le puse este título: "Trencito Paysandú | Galería"
+galeria // Agregue estas keywords: "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Galería, Fotos" y le puse este título: "Trencito Paysandú | Galería"
 
-servicios // "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Cuanto cuesta, Cuanto sale" y le puse este título: Trencito Paysandú | Servicios
+servicios // Agregue estas keywords: "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Cuanto cuesta, Cuanto sale" y le puse este título: Trencito Paysandú | Servicios
 
-sobre-nosotros // "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Quienes son, Que hacen" y le puse este título: Trencito Paysandú | Sobre nosotros
+sobre-nosotros // Agregue estas keywords: "Trencito Paysandú, Cumpleaños, Fiestas, Animadores de fiestas, Fiestas infantiles, Uruguay, Paysandú, Quienes son, Que hacen" y le puse este título: Trencito Paysandú | Sobre nosotros
