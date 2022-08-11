@@ -1,10 +1,15 @@
+@mixin size ($alto, $ancho,) {
+    height: $alto;
+    width: $ancho;
+}
+
 form {
+    @include size (320px,300px);
     margin: auto;
-    width: 300px;
     border: 5px solid black;
     border-radius: 10px;
-    margin-bottom: 146px !important;
-    margin-top: 145px !important;
+    margin-bottom: 156px !important;
+    margin-top: 156px !important;
     background-color: white;
 
     div {
@@ -12,12 +17,16 @@ form {
     }
 }
 
-.button{
+.button {
     justify-content: center;
     text-align: center;
     margin: auto !important;
     margin-top: 10px !important;
     width: 120px !important;
+}
+
+.button-primary {
+    @extend .button;
     background-color: $primarycolor;
 }
 

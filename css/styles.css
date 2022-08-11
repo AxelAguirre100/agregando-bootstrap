@@ -1,3 +1,12 @@
+.font-size-grande, h1 {
+  font-size: 40px; }
+
+.font-size-mediano {
+  font-size: 30px; }
+
+.font-size-chico, .cajon .card .card-body .card-texta, .container {
+  font-size: 20px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,28 +18,31 @@
 h1 {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
   color: antiquewhite;
-  background-color: #002f87;
+  background-color: #002e85;
   margin: 0px; }
 
 body {
-  background-color: #f2f2eb; }
+  background-color: #002f87;
+  background-image: linear-gradient(180deg, #002f87 0%, #80D0C7 100%); }
 
 footer {
-  background-color: #002f87; }
+  background-color: #002e85;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
 
 .nav {
   font-family: 'Lato', sans-serif;
   display: flex;
-  background-color: #002f87;
+  background-color: #002e85;
   justify-content: space-between;
   align-items: center; }
   .nav .logo-nav {
     width: 100px; }
   .nav .nav-list {
     list-style: none;
-    background-color: #002f87;
+    background-color: #002e85;
     color: white;
     margin: auto; }
     .nav .nav-list li {
@@ -56,11 +68,13 @@ footer {
 .titulo {
   text-align: center;
   color: antiquewhite;
-  background-color: #002f87;
+  background-color: #002e85;
   padding: 50px; }
 
 .card {
-  margin: auto; }
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   .card .card-text-sobre-nosotros {
     font-size: 30px; }
 
@@ -80,8 +94,25 @@ footer {
   background-color: #002f87;
   padding: 50px; }
 
+.carousel {
+  width: 700px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
 .d-block {
-  height: 900px; }
+  height: 900px;
+  object-fit: contain; }
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 576px) {
+  .d-block {
+    height: 400px; } }
 
 .cajon {
   margin: auto;
@@ -90,12 +121,13 @@ footer {
   .cajon .card {
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px; }
+    margin-bottom: 236px; }
     .cajon .card .card-body .card-title {
-      font-size: 30px;
-      text-decoration: underline; }
-    .cajon .card .card-body .card-texta {
-      font-size: 25px; }
+      font-size: 30px; }
+    .cajon .card .card-body .texto-b {
+      margin-bottom: 45px; }
+    .cajon .card .card-body a {
+      text-decoration: none; }
 
 @media screen and (max-width: 576px) {
   .cajon {
@@ -107,23 +139,26 @@ footer {
       margin-bottom: 50px; } }
 
 form {
-  margin: auto;
+  height: 320px;
   width: 300px;
+  margin: auto;
   border: 5px solid black;
   border-radius: 10px;
-  margin-bottom: 146px !important;
-  margin-top: 145px !important;
+  margin-bottom: 156px !important;
+  margin-top: 156px !important;
   background-color: white; }
   form div {
     padding: 10px; }
 
-.button {
+.button, .button-primary {
   justify-content: center;
   text-align: center;
   margin: auto !important;
   margin-top: 10px !important;
-  width: 120px !important;
-  background-color: #002f87; }
+  width: 120px !important; }
+
+.button-primary {
+  background-color: #002e85; }
 
 textarea {
   resize: none;
@@ -136,7 +171,6 @@ textarea {
 
 .container {
   margin: auto !important;
-  font-size: 20px;
   margin-top: 30px !important;
   height: auto; }
   .container .row .col-sm-4 {
@@ -148,6 +182,11 @@ textarea {
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px; }
+
+.imagen {
+  margin: auto;
+  display: block;
+  margin-bottom: 20px; }
 
 @media screen and (max-width: 768px) {
   .nav {

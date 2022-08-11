@@ -6,17 +6,24 @@
     .card {
         margin: auto;
         margin-top: 150px;
-        margin-bottom: 150px;
+        margin-bottom: 236px;
 
         .card-body {
 
             .card-title {
                 font-size: 30px;
-                text-decoration: underline;
             }
 
             .card-texta {
-                font-size: 25px;
+                @extend .font-size-chico;
+            }
+
+            .texto-b {
+                margin-bottom: 45px;
+            }
+
+            a {
+                text-decoration: none;
             }
         }
     }

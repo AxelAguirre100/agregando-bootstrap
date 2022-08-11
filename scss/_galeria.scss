@@ -5,6 +5,29 @@
     padding: 50px;
 }
 
+.carousel {
+    width: 700px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 .d-block {
-    height: 900px;
+    height:900px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+
+    .carousel {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    
+    .d-block {
+        height: 400px;
+    }
 }
