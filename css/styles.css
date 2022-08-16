@@ -74,7 +74,9 @@ footer {
 .card {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  animation-name: fade-in;
+  animation-duration: 1s; }
   .card .card-text-sobre-nosotros {
     font-size: 30px; }
 
@@ -99,7 +101,9 @@ footer {
   justify-content: center;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  animation-name: fade-in;
+  animation-duration: 1s; }
 
 .d-block {
   height: 900px;
@@ -117,7 +121,9 @@ footer {
 .cajon {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  animation-name: fade-in;
+  animation-duration: 1s; }
   .cajon .card {
     margin: auto;
     margin-top: 150px;
@@ -146,7 +152,9 @@ form {
   border-radius: 10px;
   margin-bottom: 156px !important;
   margin-top: 156px !important;
-  background-color: white; }
+  background-color: white;
+  animation-name: fade-in;
+  animation-duration: 1s; }
   form div {
     padding: 10px; }
 
@@ -164,6 +172,14 @@ textarea {
   resize: none;
   padding: 10px; }
 
+@keyframes fade-in {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
 .imagen-principal {
   width: 90%;
   display: flex;
@@ -173,20 +189,27 @@ textarea {
   margin: auto !important;
   margin-top: 30px !important;
   height: auto; }
-  .container .row .col-sm-4 {
-    margin: auto; }
-  .container .row .col-sm-8 {
-    display: flex;
-    object-fit: contain; }
-  .container .row .col-sm-12 {
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px; }
+  .container .row {
+    animation-name: fade-in;
+    animation-duration: 1s; }
+    .container .row .col-sm-4 {
+      margin: auto;
+      color: azure; }
+    .container .row .col-sm-8 {
+      display: flex;
+      object-fit: contain; }
+    .container .row .col-sm-12 {
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      color: azure; }
 
 .imagen {
   margin: auto;
   display: block;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  animation-name: fade-in;
+  animation-duration: 1s; }
 
 @media screen and (max-width: 768px) {
   .nav {

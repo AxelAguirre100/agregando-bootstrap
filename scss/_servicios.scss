@@ -2,6 +2,8 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    animation-name: fade-in;
+    animation-duration: 1s;
 
     .card {
         margin: auto;

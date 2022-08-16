@@ -4,6 +4,7 @@
 @import "galeria.scss";
 @import "servicios.scss";
 @import "contacto.scss";
+@import "keyframes.scss";
 
 .imagen-principal {
     width: 90%;
@@ -18,9 +19,12 @@
     height: auto;
 
     .row{
-
+      animation-name: fade-in;
+      animation-duration: 1s;
+      
         .col-sm-4 {
             margin: auto;
+            color: azure;
         }
         
         .col-sm-8 {
@@ -32,6 +36,7 @@
             margin: auto;
             margin-top: 60px;
             margin-bottom: 60px;
+            color: azure;
         }
     }
 }
@@ -40,6 +45,8 @@
     margin: auto;
     display: block;
     margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 
 @media screen and (max-width:768px) {
