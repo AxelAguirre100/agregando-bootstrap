@@ -1,21 +1,13 @@
-@import "variables.scss";
-@import "paginas.scss";
-@import "sobre-nosotros.scss";
-@import "galeria.scss";
-@import "servicios.scss";
-@import "contacto.scss";
-@import "keyframes.scss";
-
 .imagen-principal {
     width: 90%;
     display: flex;
     object-fit: fill;
 }
 
-.container {
+.wraper {
     @extend .font-size-chico;
-    margin: auto !important;
-    margin-top: 30px !important;
+    margin: auto;
+    margin-top: 30px;
     height: auto;
 
     .row{
@@ -50,16 +42,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .nav {
-        flex-direction: column;
-
-        .logo-nav {
-            text-align: center;
-            padding-left: auto;
-        }
-    }
-
-    .container {
+    .wraper {
         font-size: 15px;
         height: auto;
         width: auto;
@@ -74,10 +57,5 @@
 
     .col-12 {
         padding-top: 20px;
-    }
-
-    li {
-        display: block !important;
-        margin: 30px !important;
     }
 }

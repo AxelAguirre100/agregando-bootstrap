@@ -20,49 +20,64 @@
     <title>Trencito Paysandú | Servicios</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <span>
             <h1>Trencito Paysandú</h1>
         </span>
-        <nav class="nav">
-            <a href="../index.html"><img class="logo-nav" src="../imagenes/Screenshot_1-removebg-preview.png" alt="logo"></a>
-            <ul class="nav-list">
-                <li>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../imagenes/Screenshot_1-removebg-preview.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <h2 class="titulo">Servicios</h2>
         <div class="cajon">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Paseo por tren</h5>
-                    <p class="card-texta">Paseo en el tren con una variedad de juegos super divertidos para todas las edades.</p>
+                    <p class="card-text-servicios">Paseo en el tren con una variedad de juegos super divertidos para todas las edades.</p>
                     <a href="./contacto.html" class="card-link">Consultar</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Equipo de musica</h5>
-                    <p class="card-texta texto-b">Cumpleaños con Música y coreos infantiles en tu lugar para bailar y saltar.</p>
+                    <p class="card-text-servicios">Cumpleaños con Música y coreos infantiles en tu lugar para bailar y saltar.</p>
                     <a href="./contacto.html" class="card-link">Consultar</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="footer">
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+
+    <footer id="footer" class="mt-auto">
         <div>
             <a target="_blank" href="https://www.instagram.com/trencito_paysandu/"><img
                     src="../imagenes/Screenshot_1.png" alt="Instagram"></a>

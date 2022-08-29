@@ -1,29 +1,28 @@
 .cajon {
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     animation-name: fade-in;
     animation-duration: 1s;
+    align-items: center;
 
     .card {
+        width: 18rem;
+        height: 238px;
         margin: auto;
         margin-top: 150px;
-        margin-bottom: 236px;
+        margin-bottom: 200px;
 
         .card-body {
 
             .card-title {
-                font-size: 30px;
+                @extend .font-size-mediano;
             }
 
-            .card-texta {
+            .card-text-servicios {
                 @extend .font-size-chico;
+                height: 120px;
             }
-
-            .texto-b {
-                margin-bottom: 45px;
-            }
-
+    
             a {
                 text-decoration: none;
             }
@@ -34,13 +33,11 @@
 @media screen and (max-width:576px) {
 
     .cajon {
-        margin: auto;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
 
         .card {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-top: 18px;
+            margin-bottom: 18px;
         }
     }
 

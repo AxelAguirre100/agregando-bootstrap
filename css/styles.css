@@ -1,10 +1,10 @@
 .font-size-grande, h1 {
   font-size: 40px; }
 
-.font-size-mediano {
+.font-size-mediano, .card .card-text-sobre-nosotros, .cajon .card .card-body .card-title {
   font-size: 30px; }
 
-.font-size-chico, .cajon .card .card-body .card-texta, .container {
+.font-size-chico, .cajon .card .card-body .card-text-servicios, .wraper {
   font-size: 20px; }
 
 * {
@@ -17,10 +17,14 @@
 
 h1 {
   text-align: center;
-  font-family: 'Lato', sans-serif;
   color: antiquewhite;
   background-color: #002e85;
   margin: 0px; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999; }
 
 body {
   background-color: #002f87;
@@ -32,69 +36,29 @@ footer {
   justify-content: center;
   flex-direction: row; }
 
-.nav {
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  background-color: #002e85;
-  justify-content: space-between;
-  align-items: center; }
-  .nav .logo-nav {
-    width: 100px; }
-  .nav .nav-list {
-    list-style: none;
-    background-color: #002e85;
-    color: white;
-    margin: auto; }
-    .nav .nav-list li {
-      display: inline-block;
-      padding: 0px 10px; }
-      .nav .nav-list li a {
-        color: antiquewhite !important;
-        text-decoration: none !important; }
-    .nav .nav-list li:hover {
-      transform: scale(1.2); }
-    .nav .nav-list li a:after {
-      content: '';
-      position: relative;
-      background-color: black;
-      height: 3px;
-      width: 0;
-      display: block;
-      transition: 0.3s; }
-    .nav .nav-list a:hover:after {
-      color: black;
-      width: 100%; }
-
 .titulo {
   text-align: center;
   color: antiquewhite;
   background-color: #002e85;
-  padding: 50px; }
+  padding-bottom: 20px; }
 
 .card {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   animation-name: fade-in;
-  animation-duration: 1s; }
-  .card .card-text-sobre-nosotros {
-    font-size: 30px; }
+  animation-duration: 1s;
+  width: 640px; }
 
 @media screen and (max-width: 768px) {
-  .card-sobre-nosotros {
-    width: 30rem !important; } }
+  .card {
+    width: 480px; } }
 
 @media screen and (max-width: 576px) {
-  .card-sobre-nosotros {
-    width: 19rem !important; }
-    .card-sobre-nosotros .card-text-sobre-nosotros {
-      font-size: 20px !important; } }
-
-.h2-galeria {
-  text-align: center;
-  color: antiquewhite;
-  background-color: #002f87;
-  padding: 50px; }
+  .card {
+    width: 304px; }
+    .card .card-text-sobre-nosotros {
+      font-size: 20px; } }
 
 .carousel {
   width: 700px;
@@ -105,44 +69,47 @@ footer {
   animation-name: fade-in;
   animation-duration: 1s; }
 
-.d-block {
-  height: 900px;
-  object-fit: contain; }
+.imagen-index {
+  height: 600px; }
 
 @media screen and (max-width: 768px) {
   .carousel {
-    width: auto;
-    height: auto; } }
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px; }
+  .imagen-index {
+    height: 600px; } }
 
 @media screen and (max-width: 576px) {
-  .d-block {
-    height: 400px; } }
+  .carousel {
+    width: 300px;
+    margin-bottom: 20px; }
+  .imagen-index {
+    height: 500px; } }
 
 .cajon {
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   animation-name: fade-in;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+  align-items: center; }
   .cajon .card {
+    width: 18rem;
+    height: 238px;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 236px; }
-    .cajon .card .card-body .card-title {
-      font-size: 30px; }
-    .cajon .card .card-body .texto-b {
-      margin-bottom: 45px; }
+    margin-bottom: 200px; }
+    .cajon .card .card-body .card-text-servicios {
+      height: 120px; }
     .cajon .card .card-body a {
       text-decoration: none; }
 
 @media screen and (max-width: 576px) {
   .cajon {
-    margin: auto;
-    display: grid;
     grid-template-columns: repeat(1, 1fr); }
     .cajon .card {
-      margin-top: 50px;
-      margin-bottom: 50px; } }
+      margin-top: 18px;
+      margin-bottom: 18px; } }
 
 form {
   height: 320px;
@@ -150,8 +117,7 @@ form {
   margin: auto;
   border: 5px solid black;
   border-radius: 10px;
-  margin-bottom: 156px !important;
-  margin-top: 156px !important;
+  margin-top: 156px;
   background-color: white;
   animation-name: fade-in;
   animation-duration: 1s; }
@@ -159,11 +125,9 @@ form {
     padding: 10px; }
 
 .button, .button-primary {
-  justify-content: center;
-  text-align: center;
-  margin: auto !important;
-  margin-top: 10px !important;
-  width: 120px !important; }
+  margin: auto;
+  margin-top: 10px;
+  width: 120px; }
 
 .button-primary {
   background-color: #002e85; }
@@ -180,25 +144,61 @@ textarea {
     transform: translateX(0px);
     opacity: 1; } }
 
+.nav {
+  display: flex;
+  background-color: rgba(0, 46, 133, 0.84) !important;
+  justify-content: space-between;
+  align-items: center; }
+  .nav .navbar-toggler {
+    background-color: white; }
+  .nav .logo-nav {
+    width: 100px; }
+  .nav .nav-list {
+    margin: auto; }
+    .nav .nav-list li {
+      display: inline-block;
+      padding: 0px 10px 0px 10px;
+      text-align: center; }
+      .nav .nav-list li a {
+        color: antiquewhite; }
+    .nav .nav-list li:hover {
+      transform: scale(1.2); }
+    .nav .nav-list li a:after {
+      content: '';
+      position: relative;
+      background-color: black;
+      height: 3px;
+      width: 0;
+      display: block;
+      transition: 0.3s; }
+    .nav .nav-list a:hover:after {
+      color: black;
+      width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .nav .nav-list li {
+    padding: 20px;
+    font-size: 20px; } }
+
 .imagen-principal {
   width: 90%;
   display: flex;
   object-fit: fill; }
 
-.container {
-  margin: auto !important;
-  margin-top: 30px !important;
+.wraper {
+  margin: auto;
+  margin-top: 30px;
   height: auto; }
-  .container .row {
+  .wraper .row {
     animation-name: fade-in;
     animation-duration: 1s; }
-    .container .row .col-sm-4 {
+    .wraper .row .col-sm-4 {
       margin: auto;
       color: azure; }
-    .container .row .col-sm-8 {
+    .wraper .row .col-sm-8 {
       display: flex;
       object-fit: contain; }
-    .container .row .col-sm-12 {
+    .wraper .row .col-sm-12 {
       margin: auto;
       margin-top: 60px;
       margin-bottom: 60px;
@@ -212,12 +212,7 @@ textarea {
   animation-duration: 1s; }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: column; }
-    .nav .logo-nav {
-      text-align: center;
-      padding-left: auto; }
-  .container {
+  .wraper {
     font-size: 15px;
     height: auto;
     width: auto; }
@@ -226,7 +221,4 @@ textarea {
 
 @media screen and (max-width: 576px) {
   .col-12 {
-    padding-top: 20px; }
-  li {
-    display: block !important;
-    margin: 30px !important; } }
+    padding-top: 20px; } }

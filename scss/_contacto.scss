@@ -8,8 +8,7 @@ form {
     margin: auto;
     border: 5px solid black;
     border-radius: 10px;
-    margin-bottom: 156px !important;
-    margin-top: 156px !important;
+    margin-top: 156px;
     background-color: white;
     animation-name: fade-in;
     animation-duration: 1s;
@@ -20,11 +19,9 @@ form {
 }
 
 .button {
-    justify-content: center;
-    text-align: center;
-    margin: auto !important;
-    margin-top: 10px !important;
-    width: 120px !important;
+    margin: auto;
+    margin-top: 10px;
+    width: 120px;
 }
 
 .button-primary {

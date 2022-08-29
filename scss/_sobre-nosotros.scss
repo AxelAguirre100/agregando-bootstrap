@@ -4,25 +4,26 @@
     margin-bottom: 20px;
     animation-name: fade-in;
     animation-duration: 1s;
+    width: 640px;
     .card-text-sobre-nosotros {
-        font-size: 30px;
+        @extend .font-size-mediano;
     }
 }
 
 @media screen and (max-width:768px) {
 
-    .card-sobre-nosotros {
-        width: 30rem !important;
+    .card {
+        width: 480px;
     }
 }
 
 @media screen and (max-width:576px) {
     
-    .card-sobre-nosotros {
-        width: 19rem !important;
+    .card {
+        width: 304px;
 
-        .card-text-sobre-nosotros {
-            font-size: 20px !important;
+        .card-text-sobre-nosotros { 
+            font-size: 20px;
         }
     }
 }
